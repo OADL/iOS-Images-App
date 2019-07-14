@@ -35,7 +35,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Kp-bQb">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monvalley" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Kp-bQb">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
                                                 </imageView>
                                             </subviews>
@@ -140,6 +140,5 @@
     </scenes>
     <resources>
         <image name="monvalley" width="512" height="512"/>
-        <image name="wallpaper" width="1398" height="2592"/>
     </resources>
 </document>

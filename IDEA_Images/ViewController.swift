@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
         Images_CV.delegate = self
@@ -34,22 +35,15 @@ class ViewController: UIViewController {
 extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = Images_CV.dequeueReusableCell(withReuseIdentifier: "Image_Cell", for: indexPath) as! ImageCollectionViewCell
-        
         cell.Image_IV.image = imageArray[indexPath.item]
-        
         return cell
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         let view = self.storyboard?.instantiateViewController(withIdentifier: "ImageCV") as! ImageViewController
-        
         view.imageToShow = imageArray[indexPath.item]
-        
-        self.navigationController?.show(view, sender: self)//(view, animated: true, completion: nil)//(view, animated: true)
+        self.navigationController?.pushViewController(view, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
