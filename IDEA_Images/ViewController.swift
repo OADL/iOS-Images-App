@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Images_CV: UICollectionView!
     
-    var imageArray : [UIImage] = [#imageLiteral(resourceName: "monvalley") , #imageLiteral(resourceName: "49ad5d88-c0a6-470e-8763-8758ad7e8cd2") , #imageLiteral(resourceName: "wallpaper") , #imageLiteral(resourceName: "monvalley") , #imageLiteral(resourceName: "49ad5d88-c0a6-470e-8763-8758ad7e8cd2") , #imageLiteral(resourceName: "wallpaper")]
+    var imageArray : [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         
         Images_CV.delegate = self
         Images_CV.dataSource = self
+        
+        for _ in 0...20 {
+            imageArray.append(#imageLiteral(resourceName: "iphone_x_tropical"))
+            imageArray.append(#imageLiteral(resourceName: "enlight"))
+            imageArray.append(#imageLiteral(resourceName: "monvalley"))
+        }
         
     }
     
