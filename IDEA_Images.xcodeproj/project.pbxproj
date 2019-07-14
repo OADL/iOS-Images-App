@@ -13,6 +13,7 @@
 		8725985B22D8D6E900962E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8725985A22D8D6E900962E90 /* Assets.xcassets */; };
 		8725985E22D8D6E900962E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725985C22D8D6E900962E90 /* LaunchScreen.storyboard */; };
 		87B7C19A22D8F9000072B2DB /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7C19922D8F9000072B2DB /* ImageCollectionViewCell.swift */; };
+		87EC85EA22DB564800688100 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC85E922DB564800688100 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8725985D22D8D6E900962E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8725985F22D8D6E900962E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B7C19922D8F9000072B2DB /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		87EC85E922DB564800688100 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8725985322D8D6E600962E90 /* AppDelegate.swift */,
 				8725985522D8D6E600962E90 /* ViewController.swift */,
 				87B7C19922D8F9000072B2DB /* ImageCollectionViewCell.swift */,
+				87EC85E922DB564800688100 /* ImageViewController.swift */,
 				8725985722D8D6E600962E90 /* Main.storyboard */,
 				8725985A22D8D6E900962E90 /* Assets.xcassets */,
 				8725985C22D8D6E900962E90 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				87B7C19A22D8F9000072B2DB /* ImageCollectionViewCell.swift in Sources */,
 				8725985622D8D6E600962E90 /* ViewController.swift in Sources */,
+				87EC85EA22DB564800688100 /* ImageViewController.swift in Sources */,
 				8725985422D8D6E600962E90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,14 +13,14 @@
         <!--Images-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IDEA_Images" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="ViewController" customModule="IDEA_Images" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-Pe-fNL">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
-                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-Pe-fNL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="boX-gF-svE">
                                     <size key="itemSize" width="414" height="281"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -35,16 +35,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monvalley" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Kp-bQb">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Kp-bQb">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="M7E-Kp-bQb" firstAttribute="top" secondItem="b7b-HX-dST" secondAttribute="top" id="KCw-Qv-x1X"/>
-                                            <constraint firstAttribute="trailing" secondItem="M7E-Kp-bQb" secondAttribute="trailing" id="aZj-qg-m0m"/>
-                                            <constraint firstItem="M7E-Kp-bQb" firstAttribute="leading" secondItem="b7b-HX-dST" secondAttribute="leading" id="he2-2F-jmP"/>
-                                            <constraint firstAttribute="bottom" secondItem="M7E-Kp-bQb" secondAttribute="bottom" id="kEL-PG-adR"/>
+                                            <constraint firstItem="M7E-Kp-bQb" firstAttribute="centerY" secondItem="b7b-HX-dST" secondAttribute="centerY" id="KQL-Uh-VGY"/>
+                                            <constraint firstItem="M7E-Kp-bQb" firstAttribute="width" secondItem="b7b-HX-dST" secondAttribute="width" id="Qbl-Kq-YLb"/>
+                                            <constraint firstItem="M7E-Kp-bQb" firstAttribute="height" secondItem="b7b-HX-dST" secondAttribute="height" id="mZB-Mr-61h"/>
+                                            <constraint firstItem="M7E-Kp-bQb" firstAttribute="centerX" secondItem="b7b-HX-dST" secondAttribute="centerX" id="tCL-2R-hZt"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="Image_IV" destination="M7E-Kp-bQb" id="qfJ-3b-7Ek"/>
@@ -62,7 +62,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Images" largeTitleDisplayMode="always" id="VYK-53-qxO"/>
+                    <navigationItem key="navigationItem" title="Images" largeTitleDisplayMode="never" id="VYK-53-qxO">
+                        <barButtonItem key="backBarButtonItem" title=" " id="507-yk-QsM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Images_CV" destination="QWZ-Pe-fNL" id="Oah-sX-XzN"/>
                     </connections>
@@ -71,14 +73,60 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="sWD-rw-fPk">
+            <objects>
+                <viewController storyboardIdentifier="ImageCV" id="8Ez-eh-pvU" customClass="ImageViewController" customModule="IDEA_Images" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="na0-mS-ek8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Z7-dg-zmB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monvalley" translatesAutoresizingMaskIntoConstraints="NO" id="0gv-db-Ufz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0gv-db-Ufz" firstAttribute="top" secondItem="1Z7-dg-zmB" secondAttribute="top" id="B6h-aA-BEE"/>
+                                    <constraint firstAttribute="trailing" secondItem="0gv-db-Ufz" secondAttribute="trailing" id="IGr-b3-v4S"/>
+                                    <constraint firstItem="0gv-db-Ufz" firstAttribute="centerX" secondItem="1Z7-dg-zmB" secondAttribute="centerX" id="OcB-qL-0A4"/>
+                                    <constraint firstItem="0gv-db-Ufz" firstAttribute="centerY" secondItem="1Z7-dg-zmB" secondAttribute="centerY" id="V7o-5U-Nsz"/>
+                                    <constraint firstItem="0gv-db-Ufz" firstAttribute="leading" secondItem="1Z7-dg-zmB" secondAttribute="leading" id="gut-Km-rJW"/>
+                                    <constraint firstAttribute="bottom" secondItem="0gv-db-Ufz" secondAttribute="bottom" id="mRv-Ss-yhR"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Z7-dg-zmB" secondAttribute="bottom" id="KMu-XV-DXg"/>
+                            <constraint firstItem="1Z7-dg-zmB" firstAttribute="top" secondItem="nNt-ia-xe2" secondAttribute="top" id="bRC-Yj-APb"/>
+                            <constraint firstItem="1Z7-dg-zmB" firstAttribute="leading" secondItem="na0-mS-ek8" secondAttribute="leading" id="gB7-G5-0hL"/>
+                            <constraint firstAttribute="trailing" secondItem="1Z7-dg-zmB" secondAttribute="trailing" id="u2I-UQ-yfD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nNt-ia-xe2"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="DNN-dZ-DLg"/>
+                    <connections>
+                        <outlet property="image" destination="0gv-db-Ufz" id="3KO-49-O93"/>
+                        <outlet property="scrollView" destination="1Z7-dg-zmB" id="vz7-Pw-C6H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="len-Jh-CxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="139"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PE7-aL-cDA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pIx-ej-kfS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Gpr-JU-iqK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gpr-JU-iqK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -92,5 +140,6 @@
     </scenes>
     <resources>
         <image name="monvalley" width="512" height="512"/>
+        <image name="wallpaper" width="1398" height="2592"/>
     </resources>
 </document>
